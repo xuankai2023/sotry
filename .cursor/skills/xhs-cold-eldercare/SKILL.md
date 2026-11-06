@@ -1,6 +1,6 @@
 ---
 name: xhs-cold-eldercare
-description: 小红书方向级账号 skill，负责适老化生活 / 父母照护的选题、写作、改写、标题、素材整理、资产沉淀、草稿记录和复盘。Use when the user mentions xhs-cold-eldercare, 适老化生活 / 父母照护, 小红书账号, 选题, 草稿, 素材库, 资产库, or 复盘.
+description: 小红书方向级账号 skill，负责适老化生活 / 父母照护。Use when the user mentions xhs-cold-eldercare, 适老化, or 父母照护.
 ---
 
 # 适老化生活 / 父母照护

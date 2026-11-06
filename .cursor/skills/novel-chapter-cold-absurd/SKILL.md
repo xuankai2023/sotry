@@ -1,17 +1,18 @@
 ---
 name: novel-chapter-cold-absurd
-description: 按冷叙荒诞写具体章节大纲。痛要平着说，认真执行荒唐。Use when the user asks for 第X章、章纲 and 冷叙荒诞 or 余华式, or after novel-chapter-structure routes here.
+description: 按冷叙荒诞规划大章纲和具体场卡。Use only when the user explicitly asks for 余华式 or 冷叙荒诞的章纲/场卡.
+disable-model-invocation: true
 ---
 
 # Chapter Outline · Cold Absurd
 
-只写**具体章节大纲**。不重写全书总纲。不改 `novel-style-cold-absurd`。
+只写**大章纲或具体场卡**。不写完整正文，不重写全书总纲，不改 `novel-style-cold-absurd`。
 
-先读 `../novel-chapter-structure/SKILL.md`。本 skill 只管这一风格怎么拆一章。
+先读 `../novel-chapter-structure/SKILL.md` 与 `../novel-character-craft/SKILL.md`。大章包含 5–7 场并承担不可逆；单场只让一种普通荒唐加深一寸。正文转 `novel-prose-from-outline`。大章纲要有本章人物，场卡要有身世一寸和声音差。
 
 ## 作用
 
-把一章里人人认真做的小事写平。荒唐自己冒出来。外圈一起认真，才更荒唐。
+把一场里人人认真做的小事写平。荒唐自己冒出来。社会压力也认真执行，才更荒唐。写大章时，同一规则要经历重复、加深、产生后果和照常继续，不能只是重复台词。
 
 ## 工作流
 
@@ -35,20 +36,26 @@ description: 按冷叙荒诞写具体章节大纲。痛要平着说，认真执�
 - 遵守它怎样伤人
 - 章末生活照常，这就是疼
 
-## 章纲模板
+## 大章规则
+
+先写哪种普通规矩最终造成不可逆，再排 5–7 场：第一次认真执行 → 外圈重复 → 更正确地执行 → 孩子配合 → 后果 → 日子照常。
+
+## 场卡模板
 
 ```markdown
-# 第X章 · [被认真执行的小事]
+# [大章X-场Y] · [被认真执行的小事]
 
-## 这章主线
+## 这场主线
 [人人正确，叠在一起哪里荒唐]
+
+## 上一场结果 / 下一场问题
 
 ## 房间 / 钟
 
 ## 三圈在场
 - 内圈：
 - 中圈：
-- 外圈：[同样认真的一句或一个动作]
+- 社会压力：[外圈或规则同样认真的一句 / 一个动作]
 
 ## 普通规矩
 [大家都觉得对的]
@@ -61,13 +68,16 @@ description: 按冷叙荒诞写具体章节大纲。痛要平着说，认真执�
 ## 人物事件
 [白描。不写「他很难过」]
 
-## 不可逆
-[重复又深了一寸，仍没人停]
+## 状态变化
+[重复深了一寸，谁更熟练地配合或停止指望]
+
+## 思想一寸 / 人物变化 / 背景变化
+[按 novel-thought-ground 三栏写满]
 
 ## 孩子学会什么
 [他的「没事」更顺]
 
-## 接到下一章
+## 接到下一场
 [日子继续]
 ```
 

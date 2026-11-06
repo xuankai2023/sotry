@@ -1,6 +1,7 @@
 ---
 name: novel-style-psychological-debt
-description: 生成心理债务、张爱玲式冷细节的小说总纲和中纲。Use when the user asks for 张爱玲式、心理深度、爱与债、家庭算计、冷峻亲情、补偿心理、母亲与孩子关系大纲.
+description: 生成心理债务、张爱玲式冷细节的小说总纲和中纲。Use only when the user explicitly asks for 张爱玲式 or 心理债务总纲.
+disable-model-invocation: true
 ---
 
 # Novel Style: Psychological Debt
@@ -15,7 +16,7 @@ description: 生成心理债务、张爱玲式冷细节的小说总纲和中纲�
 
 - Use the style as a way of seeing, not as sentence-level imitation.
 - For non-00后三代 requests, do not import 周晓宁、林倩、周桂芳 or existing project scenes; build new carriers from the user's material.
-- If the user asks for 中纲, first write the 总纲 shape, then split into 4-6 large movements. Do not write chapter-level beats unless explicitly asked.
+- If the user asks for 中纲 / 部分总结：转 `novel-mid-outline`。本 skill 只交全书看法。
 
 ## Outline Rules
 

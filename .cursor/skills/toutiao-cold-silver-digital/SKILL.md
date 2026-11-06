@@ -1,6 +1,6 @@
 ---
 name: toutiao-cold-silver-digital
-description: 今日头条方向级账号 skill，负责银发数字生活 / 养老政策的选题、写作、改写、标题、素材整理、资产沉淀、草稿记录和复盘。Use when the user mentions toutiao-cold-silver-digital, 银发数字生活 / 养老政策, 今日头条账号, 选题, 草稿, 素材库, 资产库, or 复盘.
+description: 今日头条方向级账号 skill，负责银发数字生活 / 养老政策。Use when the user mentions toutiao-cold-silver-digital, 银发数字生活, or 养老政策.
 ---
 
 # 银发数字生活 / 养老政策

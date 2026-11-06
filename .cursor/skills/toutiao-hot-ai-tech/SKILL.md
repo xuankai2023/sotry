@@ -1,6 +1,6 @@
 ---
 name: toutiao-hot-ai-tech
-description: 今日头条方向级账号 skill，负责AI 科技解读的选题、写作、改写、标题、素材整理、资产沉淀、草稿记录和复盘。Use when the user mentions toutiao-hot-ai-tech, AI 科技解读, 今日头条账号, 选题, 草稿, 素材库, 资产库, or 复盘.
+description: 今日头条方向级账号 skill，负责 AI 科技解读。Use when the user mentions toutiao-hot-ai-tech, or 今日头条 AI 科技.
 ---
 
 # AI 科技解读

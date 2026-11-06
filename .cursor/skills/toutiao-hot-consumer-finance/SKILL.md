@@ -1,6 +1,6 @@
 ---
 name: toutiao-hot-consumer-finance
-description: 今日头条方向级账号 skill，负责普通人财经 / 消费趋势的选题、写作、改写、标题、素材整理、资产沉淀、草稿记录和复盘。Use when the user mentions toutiao-hot-consumer-finance, 普通人财经 / 消费趋势, 今日头条账号, 选题, 草稿, 素材库, 资产库, or 复盘.
+description: 今日头条方向级账号 skill，负责普通人财经 / 消费趋势。Use when the user mentions toutiao-hot-consumer-finance, 普通人财经, or 消费趋势.
 ---
 
 # 普通人财经 / 消费趋势

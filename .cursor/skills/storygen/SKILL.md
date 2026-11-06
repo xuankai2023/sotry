@@ -1,12 +1,10 @@
 ---
 name: storygen
 description: >-
-  Generate great stories through an agentic Plan → Write → Test → Revise
-  pipeline with a Pixar-style Braintrust of specialist reviewers (structure,
-  emotion, character, worldbuilding, tension, voice). Use when the user asks
-  to write a story, short story, script, screenplay, novel chapter, children's
-  storybook, comic, tall tale, fanfic, universe remix, or narrative of any
-  kind — or to critique or revise an existing story draft or outline.
+  Pixar-style Braintrust story pipeline (Plan → Write → Test → Revise).
+  Use only when the user explicitly asks for storygen or Braintrust.
+  Do not use for 番茄长篇、短故事、中纲、场卡 or 日更正文.
+disable-model-invocation: true
 ---
 
 # Storygen: Agentic Story Generation

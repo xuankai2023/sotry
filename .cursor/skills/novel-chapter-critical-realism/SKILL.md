@@ -1,17 +1,18 @@
 ---
 name: novel-chapter-critical-realism
-description: 按批判现实写具体章节大纲。露出「为你好」怎样执行。Use when the user asks for 第X章、章纲 and 批判现实 or 鲁迅式, or after novel-chapter-structure routes here.
+description: 按批判现实规划大章纲和具体场卡。Use only when the user explicitly asks for 鲁迅式 or 批判现实的章纲/场卡.
+disable-model-invocation: true
 ---
 
 # Chapter Outline · Critical Realism
 
-只写**具体章节大纲**。不重写全书总纲。不改 `novel-style-critical-realism`。
+只写**大章纲或具体场卡**。不写完整正文，不重写全书总纲，不改 `novel-style-critical-realism`。
 
-先读 `../novel-chapter-structure/SKILL.md`。本 skill 只管这一风格怎么拆一章。
+先读 `../novel-chapter-structure/SKILL.md` 与 `../novel-character-craft/SKILL.md`。大章包含 5–7 场并承担不可逆；单场只露出一条规矩怎样被执行。正文转 `novel-prose-from-outline`。大章纲要有本章人物，场卡要有身世一寸和声音差。
 
 ## 作用
 
-把一章里那句正当的话找出来，看谁执行、孩子怎样配合。不骂人。
+把一场里那句正当的话找出来，看谁执行、孩子怎样配合。不骂人。写大章时，让同一规矩经历提出、外圈常识化、执行、孩子配合和继续运转。
 
 ## 工作流
 
@@ -35,20 +36,26 @@ description: 按批判现实写具体章节大纲。露出「为你好」怎样�
 - 话后面要孩子交出什么
 - 孩子先学会配合，不是先学会反抗
 
-## 章纲模板
+## 大章规则
+
+先写本章哪条正当话最终成为不可逆规矩，再排 5–7 场：提出 → 外圈常识化 → 执行 → 孩子配合 → 后果 → 规矩继续转。
+
+## 场卡模板
 
 ```markdown
-# 第X章 · [那句正当的话]
+# [大章X-场Y] · [那句正当的话]
 
-## 这章主线
-[「为你好」怎样变成这一章的规矩]
+## 这场主线
+[「为你好」怎样在这一场被执行]
+
+## 上一场结果 / 下一场问题
 
 ## 房间 / 钟
 
 ## 三圈在场
 - 内圈：
 - 中圈：
-- 外圈：[谁把这话讲成常识]
+- 社会压力：[谁或哪条公共规则把这话讲成常识]
 
 ## 正当的一句
 [原文能上饭桌的那句]
@@ -61,13 +68,16 @@ description: 按批判现实写具体章节大纲。露出「为你好」怎样�
 ## 人物事件
 [几乎正常。外面看不出残酷]
 
-## 不可逆
-[孩子又学会一条配合]
+## 状态变化
+[孩子本场多学会了哪一步配合，或谁取得了执行资格]
+
+## 思想一寸 / 人物变化 / 背景变化
+[按 novel-thought-ground 三栏写满]
 
 ## 孩子学会什么
 [怎样听「为你好」才不会让谁受伤]
 
-## 接到下一章
+## 接到下一场
 ```
 
 ## 禁

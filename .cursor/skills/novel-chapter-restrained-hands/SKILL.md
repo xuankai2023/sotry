@@ -1,17 +1,18 @@
 ---
 name: novel-chapter-restrained-hands
-description: 按克制留白写具体章节大纲。手、工具、不说的那句。Use when the user asks for 第X章、章纲 and 克制留白 or 汪曾祺式, or after novel-chapter-structure routes here.
+description: 按克制留白规划大章纲和具体场卡。Use only when the user explicitly asks for 汪曾祺式 or 克制留白的章纲/场卡.
+disable-model-invocation: true
 ---
 
 # Chapter Outline · Restrained Hands
 
-只写**具体章节大纲**。不重写全书总纲。不改 `novel-style-restrained-hands`。
+只写**大章纲或具体场卡**。不写完整正文，不重写全书总纲，不改 `novel-style-restrained-hands`。
 
-先读 `../novel-chapter-structure/SKILL.md`。本 skill 只管这一风格怎么拆一章。
+先读 `../novel-chapter-structure/SKILL.md` 与 `../novel-character-craft/SKILL.md`。大章包含 5–7 场并承担不可逆；单场只让一双手和一件物改变状态。正文转 `novel-prose-from-outline`。大章纲要有本章人物，场卡要有身世一寸和声音差。
 
 ## 作用
 
-把一章交给手：修、盛、洗、绑、放正。话少。外圈也用手，不用讲道理。
+把一场交给手：修、盛、洗、绑、放正。话少。社会压力也尽量落到手和工具，不用讲道理。写大章时，5–7 场必须让手的用法发生递进，不重复洗、放正或递水。
 
 ## 工作流
 
@@ -35,20 +36,26 @@ description: 按克制留白写具体章节大纲。手、工具、不说的那�
 - 外圈递工具、让座、或只站着看
 - 章末物件意思变了，人不解释
 
-## 章纲模板
+## 大章规则
+
+先写章末哪件东西再也不能按原来的意思使用，再排 5–7 场：手做事 → 外力看见 → 手替嘴遮掩 → 选择 → 物件变意 → 留白回声。
+
+## 场卡模板
 
 ```markdown
-# 第X章 · [工具或手]
+# [大章X-场Y] · [工具或手]
 
-## 这章主线
+## 这场主线
 [手做完了什么，话没说]
+
+## 上一场结果 / 下一场问题
 
 ## 房间 / 钟
 
 ## 三圈在场
 - 内圈：
 - 中圈：[哪双手]
-- 外圈：[一个动作，不要一段评价]
+- 社会压力：[一个外圈动作，或工具 / 规矩留下的压力]
 
 ## 主手 / 主物
 [谁，拿什么]
@@ -59,13 +66,16 @@ description: 按克制留白写具体章节大纲。手、工具、不说的那�
 ## 人物事件
 [只写手。对话每人都短]
 
-## 不可逆
-[这件东西以后不能再当原来的意思]
+## 状态变化
+[本场这双手或这件东西的用法挪了哪一寸]
+
+## 思想一寸 / 人物变化 / 背景变化
+[按 novel-thought-ground 三栏写满]
 
 ## 孩子学会什么
 [他看见了手，还不会命名]
 
-## 接到下一章
+## 接到下一场
 ```
 
 ## 禁

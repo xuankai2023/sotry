@@ -1,6 +1,6 @@
 ---
 name: xhs-hot-skincare
-description: 小红书方向级账号 skill，负责精简护肤 / 问题肌避坑的选题、写作、改写、标题、素材整理、资产沉淀、草稿记录和复盘。Use when the user mentions xhs-hot-skincare, 精简护肤 / 问题肌避坑, 小红书账号, 选题, 草稿, 素材库, 资产库, or 复盘.
+description: 小红书方向级账号 skill，负责精简护肤 / 问题肌避坑。Use when the user mentions xhs-hot-skincare, 精简护肤, 问题肌, or 护肤避坑.
 ---
 
 # 精简护肤 / 问题肌避坑

@@ -1,6 +1,6 @@
 ---
 name: xhs-hot-ai-workflow
-description: 小红书方向级账号 skill，负责AI 工具 / 职场效率的选题、写作、改写、标题、素材整理、资产沉淀、草稿记录和复盘。Use when the user mentions xhs-hot-ai-workflow, AI 工具 / 职场效率, 小红书账号, 选题, 草稿, 素材库, 资产库, or 复盘.
+description: 小红书方向级账号 skill，负责 AI 工具 / 职场效率。Use when the user mentions xhs-hot-ai-workflow, 小红书 AI 工具, or 小红书职场效率.
 ---
 
 # AI 工具 / 职场效率

@@ -1,17 +1,18 @@
 ---
 name: novel-chapter-warm-growth
-description: 按温柔成长写具体章节大纲。有限修补，不结案。Use when the user asks for 第X章、章纲 and 温柔成长 or 治愈但不鸡汤, or after novel-chapter-structure routes here.
+description: 按温柔成长规划大章纲和具体场卡。Use only when the user explicitly asks for 温柔成长 or 治愈但不鸡汤的章纲/场卡.
+disable-model-invocation: true
 ---
 
 # Chapter Outline · Warm Growth
 
-只写**具体章节大纲**。不重写全书总纲。不改 `novel-style-warm-growth`。
+只写**大章纲或具体场卡**。不写完整正文，不重写全书总纲，不改 `novel-style-warm-growth`。
 
-先读 `../novel-chapter-structure/SKILL.md`。本 skill 只管这一风格怎么拆一章。
+先读 `../novel-chapter-structure/SKILL.md` 与 `../novel-character-craft/SKILL.md`。大章包含 5–7 场并承担不可逆；单场只允许一次有限靠近或一次故态复发。正文转 `novel-prose-from-outline`。大章纲要有本章人物，场卡要有身世一寸和声音差。
 
 ## 作用
 
-把一章写成一次有限靠近：伤口仍在，有人多做半步。外圈可以看见，但不来主持和解。
+把一场写成一次有限靠近：伤口仍在，有人多做半步。社会压力可以看见，但不来主持和解。写大章时，修补必须经历试探、靠近、复发和有限保留，不能五场连续变好。
 
 ## 工作流
 
@@ -34,20 +35,26 @@ description: 按温柔成长写具体章节大纲。有限修补，不结案。U
 - 修补小到第二天仍可能故态
 - 晓宁分辨力长一寸，不是胜利
 
-## 章纲模板
+## 大章规则
+
+先写本章不可能完全修好的伤口与目标不可逆，再排 5–7 场：故态 → 外压 → 小试探 → 有限修补 → 复发 → 留下一点不同。
+
+## 场卡模板
 
 ```markdown
-# 第X章 · [一次小的不同]
+# [大章X-场Y] · [一次小的不同]
 
-## 这章主线
+## 这场主线
 [靠近一点，什么仍不结案]
+
+## 上一场结果 / 下一场问题
 
 ## 房间 / 钟
 
 ## 三圈在场
 - 内圈：
 - 中圈：
-- 外圈：[看见修补或看见未修，不要来主持和解]
+- 社会压力：[外圈或旧话看见修补 / 未修，不主持和解]
 
 ## 仍在的伤口
 [具体]
@@ -60,13 +67,16 @@ description: 按温柔成长写具体章节大纲。有限修补，不结案。U
 ## 人物事件
 [温，但不洗白]
 
-## 不可逆
-[有人做过一次不同；不等于家好了]
+## 状态变化
+[有人做过一次不同，或故态复发后仍留下了什么]
+
+## 思想一寸 / 人物变化 / 背景变化
+[按 novel-thought-ground 三栏写满]
 
 ## 孩子学会什么
 [不再把一切叫伤害，也不把一切叫爱]
 
-## 接到下一章
+## 接到下一场
 ```
 
 ## 禁

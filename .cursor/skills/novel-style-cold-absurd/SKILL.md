@@ -1,6 +1,7 @@
 ---
 name: novel-style-cold-absurd
-description: 生成冷叙荒诞、余华式白描痛感的小说总纲和中纲。Use when the user asks for 余华式、冷叙述、荒诞现实、普通残酷、白描、苦难不煽情的大纲.
+description: 生成冷叙荒诞、余华式白描痛感的小说总纲和中纲。Use only when the user explicitly asks for 余华式 or 冷叙荒诞总纲.
+disable-model-invocation: true
 ---
 
 # Novel Style: Cold Absurd
@@ -15,7 +16,7 @@ description: 生成冷叙荒诞、余华式白描痛感的小说总纲和中纲�
 
 - Use the style as a way of seeing, not as sentence-level imitation.
 - For non-00后三代 requests, do not import 周晓宁、林倩、周桂芳 or existing project scenes; build new carriers from the user's material.
-- If the user asks for 中纲, first write the 总纲 shape, then split into 4-6 large movements. Do not write chapter-level beats unless explicitly asked.
+- If the user asks for 中纲 / 部分总结：转 `novel-mid-outline`。本 skill 只交全书看法。
 
 ## Outline Rules
 

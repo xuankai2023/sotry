@@ -3,7 +3,8 @@ name: events-00hou-grandparents
 description: >-
   按 00 后儿童库、父母库的同一套路，书写 2000–2010「00 后爷爷奶奶外公外婆」家庭与带孙主卡：灶、退休金、麻将、进城帮带、留守堂屋、婆家娘家。
   Use when the user mentions events-00hou-grandparents、00后爷爷奶奶、00后外公外婆、40后50后带孙、祖辈视角事件、
-  events-00后爷爷奶奶视角, or asks to write / 改写 / 总检 grandparent-year family and care cards.
+  events-00后爷爷奶奶视角, or asks to write / 改写 / 总检 2000–2010 grandparent-year family and care cards.
+disable-model-invocation: true
 ---
 
 # 00 后祖辈 · 2000–2010 家庭与带孙事件

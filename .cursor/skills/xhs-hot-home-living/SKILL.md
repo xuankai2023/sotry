@@ -1,6 +1,6 @@
 ---
 name: xhs-hot-home-living
-description: 小红书方向级账号 skill，负责家居收纳 / 适宠适童智能家的选题、写作、改写、标题、素材整理、资产沉淀、草稿记录和复盘。Use when the user mentions xhs-hot-home-living, 家居收纳 / 适宠适童智能家, 小红书账号, 选题, 草稿, 素材库, 资产库, or 复盘.
+description: 小红书方向级账号 skill，负责家居收纳 / 适宠适童智能家。Use when the user mentions xhs-hot-home-living, 家居收纳, 适宠, or 适童智能家.
 ---
 
 # 家居收纳 / 适宠适童智能家

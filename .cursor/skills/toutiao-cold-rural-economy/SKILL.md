@@ -1,6 +1,6 @@
 ---
 name: toutiao-cold-rural-economy
-description: 今日头条方向级账号 skill，负责三农 / 县域经济的选题、写作、改写、标题、素材整理、资产沉淀、草稿记录和复盘。Use when the user mentions toutiao-cold-rural-economy, 三农 / 县域经济, 今日头条账号, 选题, 草稿, 素材库, 资产库, or 复盘.
+description: 今日头条方向级账号 skill，负责三农 / 县域经济。Use when the user mentions toutiao-cold-rural-economy, 三农, or 县域经济.
 ---
 
 # 三农 / 县域经济

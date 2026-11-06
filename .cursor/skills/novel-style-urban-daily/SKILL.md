@@ -1,6 +1,7 @@
 ---
 name: novel-style-urban-daily
-description: 生成市民日常、王安忆式城市生活质感的小说总纲和中纲。Use when the user asks for 王安忆式、市民小说、城市日常、生活纹理、女性日程、菜市场、弄堂/单位楼/小区家庭大纲.
+description: 生成市民日常、王安忆式城市生活质感的小说总纲和中纲。Use only when the user explicitly asks for 王安忆式 or 市民日常总纲.
+disable-model-invocation: true
 ---
 
 # Novel Style: Urban Daily Texture
@@ -15,7 +16,7 @@ description: 生成市民日常、王安忆式城市生活质感的小说总纲�
 
 - Use the style as a way of seeing, not as sentence-level imitation.
 - For non-00后三代 requests, do not import 周晓宁、林倩、周桂芳 or existing project scenes; build new carriers from the user's material.
-- If the user asks for 中纲, first write the 总纲 shape, then split into 4-6 large movements. Do not write chapter-level beats unless explicitly asked.
+- If the user asks for 中纲 / 部分总结：转 `novel-mid-outline`。本 skill 只交全书看法。
 
 ## Outline Rules
 

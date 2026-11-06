@@ -1,6 +1,6 @@
 ---
 name: xhs-cold-craft-diy
-description: 小红书方向级账号 skill，负责小众手工 / 拼豆潮玩 DIY的选题、写作、改写、标题、素材整理、资产沉淀、草稿记录和复盘。Use when the user mentions xhs-cold-craft-diy, 小众手工 / 拼豆潮玩 DIY, 小红书账号, 选题, 草稿, 素材库, 资产库, or 复盘.
+description: 小红书方向级账号 skill，负责小众手工 / 拼豆潮玩 DIY。Use when the user mentions xhs-cold-craft-diy, 小众手工, 拼豆, or 潮玩 DIY.
 ---
 
 # 小众手工 / 拼豆潮玩 DIY

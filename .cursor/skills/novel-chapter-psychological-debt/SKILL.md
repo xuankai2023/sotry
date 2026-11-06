@@ -1,17 +1,18 @@
 ---
 name: novel-chapter-psychological-debt
-description: 按心理债务写具体章节大纲。爱是账，收据和让菜是索取。Use when the user asks for 第X章、章纲 and 心理债务 or 张爱玲式, or after novel-chapter-structure routes here.
+description: 按心理债务规划大章纲和具体场卡。Use only when the user explicitly asks for 张爱玲式 or 心理债务的章纲/场卡.
+disable-model-invocation: true
 ---
 
 # Chapter Outline · Psychological Debt
 
-只写**具体章节大纲**。不重写全书总纲。不改 `novel-style-psychological-debt`。
+只写**大章纲或具体场卡**。不写完整正文，不重写全书总纲，不改 `novel-style-psychological-debt`。
 
-先读 `../novel-chapter-structure/SKILL.md`。本 skill 只管这一风格怎么拆一章。
+先读 `../novel-chapter-structure/SKILL.md` 与 `../novel-character-craft/SKILL.md`。大章包含 5–7 场并承担一笔无法销掉的关系账；单场只记一笔状态变化。正文转 `novel-prose-from-outline`。大章纲要有本章人物，场卡要有身世一寸和声音差。
 
 ## 作用
 
-把一章写成一笔账：谁付、谁记、孩子怎样少欠一点。
+把一场写成一笔账：谁付、谁记、孩子怎样少欠一点。写大章时，让 5–7 场完成付出、见证、索取、结账失败和余账，不重复摆收据。
 
 ## 工作流
 
@@ -35,20 +36,26 @@ description: 按心理债务写具体章节大纲。爱是账，收据和让菜�
 - 外圈一句「你们家真舍得 / 第几名」，怎样把账钉死
 - 晓宁用什么办法少欠（配合、撒谎、说没事）
 
-## 章纲模板
+## 大章规则
+
+先写起始关系账与目标余账，再排 5–7 场：付出 → 外圈钉账 → 温柔索取 → 孩子结账 → 反弹 → 余账进入下一章。至少两次社会压力进入，不强制每场出现外圈真人。
+
+## 场卡模板
 
 ```markdown
-# 第X章 · [账上的物件]
+# [大章X-场Y] · [账上的物件]
 
-## 这章主线
+## 这场主线
 [哪一笔爱变成债]
+
+## 上一场结果 / 下一场问题
 
 ## 房间 / 钟
 
 ## 三圈在场
 - 内圈：
 - 中圈：
-- 外圈：[谁看见这张收据或这口菜，说了什么]
+- 社会压力：[谁看见这张收据，或哪张纸 / 哪句旧话把账钉住]
 
 ## 账本
 - 付出：[假条 / 鱼肚子 / 报班 / 红包]
@@ -60,13 +67,16 @@ description: 按心理债务写具体章节大纲。爱是账，收据和让菜�
 ## 人物事件
 [冷细节。手、纸、碗。不解释心理]
 
-## 不可逆
-[这笔记上了，不能装没发生]
+## 状态变化
+[本场新增、加重、误认或拒绝了哪一笔账]
+
+## 思想一寸 / 人物变化 / 背景变化
+[按 novel-thought-ground 三栏写满]
 
 ## 孩子学会什么
 [怎样回答才安全]
 
-## 接到下一章
+## 接到下一场
 ```
 
 ## 禁

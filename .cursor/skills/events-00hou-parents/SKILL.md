@@ -3,7 +3,8 @@ name: events-00hou-parents
 description: >-
   按 00 后儿童视角事件库的同一套路，书写 2000–2010「00 后父母」家庭与工作主卡：饭桌、钱包、加班、接送、红包、月供。
   Use when the user mentions events-00hou-parents、00后父母、70后80后带娃、父母视角事件、
-  events-00后父母视角, or asks to write / 改写 / 总检 parent-year family and work cards.
+  events-00后父母视角, or asks to write / 改写 / 总检 2000–2010 parent-year family and work cards.
+disable-model-invocation: true
 ---
 
 # 00 后父母 · 2000–2010 家庭与工作事件

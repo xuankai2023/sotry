@@ -1,14 +1,29 @@
 ---
 name: novel-master-outline
-description: 生成发人深省、非烂俗剧情、来源于真实生活观察的中文长篇小说大师式总纲和中纲。Use when the user asks for 小说大纲、主线、脑图、总纲、中纲、人物事件关系、文章大师写法, especially for the 00后三代小说 project. Prioritizes a narrow playable story spine, life evidence, deep human contradiction, and anti-cliche theme over broad research catalogs; starts with 总的, and only writes细纲 when explicitly requested.
+description: 生成发人深省、非烂俗剧情、来源于真实生活观察的中文长篇小说大师式总纲，并写出全书思想、人物性格变化、背景变化与人物志。Use when the user asks for 全书总纲、主线、脑图、六部骨架、文章大师写法. 中纲转 novel-mid-outline；人物志细节转 novel-character-craft；写正文转 novel-prose-from-outline。
 ---
 
 # Novel Master Outline
 
 ## Role
 
-本 skill 只做全书总纲和大段中纲。  
-写第几章、单章结构、亲朋谁进门：转 `novel-chapter-structure`，再走对应 `novel-chapter-*`。不要在这里写具体章纲。八个 `novel-style-*` 也不要改。
+本 skill 只做全书总纲、六部走向和大章骨架。先整体后局部：总纲必须先写出思想、人物开篇→终局会变什么、主场背景会变什么。单场三栏见 `novel-thought-ground`。性格怎么变必须按 `novel-character-change` 写成合同，不要事后补一行心情。  
+用户要中纲 / 部分总结 / 部纲：转 `novel-mid-outline`。  
+写具体大章纲、场卡、亲朋谁进门：转 `novel-chapter-structure`，再走对应 `novel-chapter-*`。写完整正文转 `novel-prose-from-outline`。不要在这里写具体场卡或正文。八个 `novel-style-*` 也不要改。
+
+总纲里的人必须按 `novel-character-craft` 写成人物志：身世、缺口、爱的办法、伤人的同一办法、手、嘴、年段门。只有欲望四个字，总纲不算齐。00 后三代默认同见该 skill 的 `sandai-cast.md` 与 `番茄/00hou-sandai/中纲/人物志/`。
+
+写到「人物变化」时，必须打开 `../novel-character-change/SKILL.md`，按它的总纲模板交：主变、压变场面、各部一寸、终局只差一寸、可见证据。00 后三代对照见该 skill 的 `sandai-arcs.md`。
+
+## Entry Contract
+
+先判定任务，不要一上来重写全书：
+
+1. **新书总纲**：先收题材、主角、主场、核心矛盾，再写一份总纲。
+2. **现有总纲修订**：先读已落盘总纲，只修用户点名的问题；不因格式不齐重开整本。
+3. **00 后三代现行书**：先读 `番茄/00hou-sandai/README.md`、`story-bible.md`、`总纲-大师写法.md`。这本已认总纲，不另起一份；只在用户明确要求补总纲栏位时，按已定骨头补思想 / 人物变化 / 背景变化，不改冻结矩阵。
+
+交付前必须说清楚当前属于哪一种。若用户只说“写总纲”，默认交**总纲**，不顺手往下拆中纲、场卡或正文。
 
 ## Core Rule
 
@@ -21,7 +36,7 @@ description: 生成发人深省、非烂俗剧情、来源于真实生活观察�
 3. 哪几件事发生后关系回不去？
 4. 主角最后看懂了什么？
 
-如果用户明确要求细纲，再从总纲拆中纲；没有明确要求时，只交总纲。
+如果用户明确要求中纲 / 部分总结，转 `novel-mid-outline`。如果用户明确要求细纲 / 把场卡拆成拍，转 `novel-fine-outline`（场卡未齐先 `novel-chapter-structure`）。没有明确要求时，只交总纲。
 
 ## Novel Features Checklist
 
@@ -31,7 +46,7 @@ description: 生成发人深省、非烂俗剧情、来源于真实生活观察�
 2. **内在缺口**: 每个主要人物都有未被满足的伤口，这个伤口会扭曲他们的爱。
 3. **外部压力**: 钱、房、班、学校、门口、亲戚眼光必须真实压住人物。
 4. **不可逆场面**: 每个关键场面之后，关系回不到原样。
-5. **因果推进**: 事件必须导致人物改变做法，不能只是年份顺排。
+5. **因果推进**: 事件必须导致人物改变做法，不能只是年份顺排。性格怎么变，按 `novel-character-change` 锁主变和压变场面。
 6. **生活质感**: 物件必须被人拿、洗、藏、付钱、修理、等待，不能只是时代标签。
 7. **潜台词**: 最重要的话常常不说出口，转成夹菜、收钱、关门、洗碗声。
 8. **精神余波**: 结尾不能只解决情节，要留下读者会继续想的问题。
@@ -92,6 +107,18 @@ To avoid online cliche, look for material that is slightly inconvenient, mixed, 
 
 For 00后三代, do not flatten the story into "old vs new." Grandma's old method must sometimes save the day. Mother's new method must sometimes become control. The child's escape must be both survival and loss.
 
+## Mastery Standard
+
+大师式不是把每个细节都压满意义。总纲必须给后续正文留下生活自然流动的空间。
+
+写总纲时同时锁三件事：
+
+- **思想深度**：人物的爱里有缺口、证明、债或自救，不是纯亲情。
+- **生活呼吸**：每部至少有能让日子先成立的温暖、好用、好玩或安稳时刻，代价可以延后，不要每个动作立刻被解释成控制。
+- **方法隐形**：物件链要服务人物，不要让读者看出作者在机械安排「纸、碗、门、听筒」。
+
+如果总纲只会把每个物件都写成证据、每个场面都写成伤害，后续正文会过密、过硬。必须补一类场面：人物确实被照顾、确实得到一点快乐或安全，但这份好处在后文慢慢露出代价。
+
 ## Use These Project Sources
 
 For the 00后三代小说 project, read as needed:
@@ -104,6 +131,9 @@ For the 00后三代小说 project, read as needed:
 - `content-intelligence/research/events-00后爷爷奶奶视角/`
 - `content-intelligence/research/personas/00-索引.md`
 - `content-intelligence/research/personas-00后祖辈/00-索引.md`
+- `番茄/00hou-sandai/中纲/人物志/`
+- `../novel-character-craft/SKILL.md`
+- `../novel-character-change/SKILL.md`
 
 Do not use `tools/storygen-skill-src/samples/linglinghou-decade-one/research/` as the main spine unless the user explicitly switches to a news-braid novel. For the family novel, news stays outside the window.
 
@@ -151,7 +181,23 @@ For the 00后三代小说 default:
 - Location: 江州单位老楼 and its doorway.
 - Spine: 满月酒 → 第一把勺 → 听筒 → 抢勺 → 留下 → 晚托散场 → 成年回看.
 
+### 1.5. Read Before Writing
+
+写新书总纲，至少要有一个可验证的生活来源；没有素材时先向用户要一句真实处境，或用用户已给材料提炼，不凭空堆时代标签。
+
+修 00 后三代总纲时，按这个顺序读：
+
+1. `番茄/00hou-sandai/README.md` 的当前冻结与结构尺度
+2. `番茄/00hou-sandai/story-bible.md` 的已锁家庭、脊柱和世界规则
+3. `番茄/00hou-sandai/总纲-大师写法.md` 的人物骨头、总结构和结尾
+4. 需要补人物时再读 `../novel-character-craft/SKILL.md`
+5. 需要补性格变化时再读 `../novel-character-change/SKILL.md`
+
+只读能支撑本次修订的文件。不要为了“更专业”重新打开全书矩阵做六维复核。
+
 ### 2. Write The Master Outline
+
+写「三个真正扛戏的人」之后、「六个不可逆场面」前后，打开 `novel-character-change`，把性格变化合同写进「人物变化」。不可逆场面必须至少压一个扛戏的人的主变。
 
 Use this structure:
 
@@ -169,10 +215,16 @@ Use this structure:
 
 ## 三个真正扛戏的人
 ### [Person]
-[desire, wound, how they love, what they must learn]
+按 `novel-character-craft` 的人物志写，不要四行标签：
+- 身世（到开篇为止，压选择）
+- 此刻要什么 / 真正护什么
+- 爱的办法 / 伤人的同一办法
+- 手（3） / 嘴（常说、不说、句长）
+- 年段门（本章以后才能说的句子列出来）
 
 ## 另外的人怎么用
 [mirrors only; do not turn every persona into a main line]
+每人至少：身世一寸、手、嘴、不要抢走发动机。
 
 ## 六个不可逆场面
 ### 1. [Scene]
@@ -183,6 +235,24 @@ Use this structure:
 
 ## 结尾
 [what the protagonist understands, without judging everyone]
+
+## 全书思想
+[一句刺人的问题，不要「三代亲情 / 时代变迁」。00 后三代默认北星见 Theme Standard。]
+
+## 人物变化 / 性格变化
+按 `novel-character-change` 写，不要一行心情。扛戏的人写满，中圈可短：
+- 开篇性格（手 / 嘴 / 办法）
+- 主变（只选一种）：加硬 / 裂缝 / 换物 / 嘴缩 / 手收 / 误认 / 长出
+- 核心办法始终是
+- 压变的不可逆场面（2–4 个，只点名）
+- 各部一寸（不碰的部写「本部分不碰」）
+- 终局只许差的一寸 + 可见证据
+- 不许完成 / 不许变成
+- 压在哪一句思想上
+不许写完弧光，不许「他成长了」。栏位见该 skill 的 `template.md`。
+
+## 背景变化
+主场谁有权、哪几样东西换位置或换用法、门口/灶/纸的规矩怎样挪。要看得见。
 
 ## 大师式写法的约束
 [what to see and omit, not style imitation]
@@ -210,6 +280,18 @@ For the 00后三代小说 default:
 - The deeper question is not "who raised the child?" but "who borrowed the child to repair their own缺口?"
 
 If a paragraph can be replaced by "体现时代 / 表现亲情 / 三代冲突", it is too shallow.
+
+### 2.55. Add Breath Before Adding More Weight
+
+深度已经成立时，不要继续加物件和伤口。先问：
+
+1. 这部 / 这章有没有一场让读者看见人物的办法真的有用？
+2. 有没有一个孩子或老人能暂时舒服、好玩、安心的时刻？
+3. 这个温暖是否先不被作者解释，等后文再露出代价？
+4. 是否连续三场都在用纸、账、门、碗证明同一个主题？
+5. 哪一场可以少一个象征物，多一个普通动作？
+
+过门：读者必须先相信这些人真的会过日子、真的彼此有用，后面的压迫和错过才有重量。
 
 ### 2.6. Anti-Cliche Gate
 
@@ -255,6 +337,28 @@ Reject or revise any outline if:
 - The protagonist does not face an irreversible change.
 - The ending is only a summary or a judgment.
 - It cannot answer: who wants what, who stops them, what cannot return?
+- 主要人物没有身世来路，或身世只是履历表。
+- 主要人物可以互换对白而不别扭。
+- 用性格类型词代替手和嘴。
+- 没有全书思想，或思想是口号。
+- 没有人物开篇→终局变化，或变化只写心情。
+- 性格变化没有主变、没有压变场面，或两人合同对调后仍成立。
+- 没有主场背景变化，或背景只写年代标签。
+- 全书只有伤害和证明，没有让爱真实成立的日常好处。
+- 物件链过于整齐，读者能看出作者在用每样东西点题。
+
+## Delivery Gate
+
+交付总纲前，按这个顺序自检并补齐：
+
+1. **故事能动**：谁想要什么，谁挡住，哪几次之后回不去。
+2. **人能认**：遮掉姓名，三个扛戏的人仍能靠手、嘴、身世一寸分开。
+3. **变化能见**：人物变化不是心情词，必须落到手、嘴、路线、物件用法。
+4. **背景会挪**：主场里谁有权、谁能进门、谁能关门、哪样东西换了位置。
+5. **思想不喊**：主题先从生活后果里出来，再写成刺人的问题。
+6. **没有跳层**：没有正式正文、没有完整场卡、没有新矩阵。
+
+若缺其中一项，先修总纲，不把问题推给中纲或正文。
 
 ## 00后三代 Novel Defaults
 
@@ -265,7 +369,7 @@ Keep these unless the user changes them:
 - News: TV sound only, not plot engine.
 - Milk: daily can / water temperature / imported label only, no public scandal chapter.
 - POV: third-person limited rotation; adult first-person only in epilogue.
-- Scope: first write 总纲;细纲, cards, chapter beats only after explicit request.
+- Scope: first write 总纲；六部与 18 大章骨架、具体场卡只在用户明确要求后继续；完整正文转 `novel-prose-from-outline`。
 
 ## Output Style
 
@@ -273,4 +377,4 @@ Write concise Chinese Markdown. Prefer scenes, objects, and choices over explana
 
 Use short paragraphs. Do not create large tables unless comparing sources is the deliverable.
 
-Never end with a generic "可以继续优化". If follow-up is useful, name the exact next artifact, e.g. "下一步可拆 12–18 章中纲".
+Never end with a generic "可以继续优化". If follow-up is useful, name the exact next artifact, e.g. "下一步可拆 6 部 18 大章骨架" or "下一步可为目标大章补 5–7 张因果场卡".

@@ -1,6 +1,6 @@
 ---
 name: novel-style-family-realism
-description: 生成家庭现实主义小说总纲、中纲和场面设计。Use when the user asks for 现实主义、家庭小说、三代家庭、生活流、非狗血、发人深省的大纲 or wants the 00后三代小说 written with ordinary household pressure instead of melodrama.
+description: 生成家庭现实主义小说总纲，以普通家庭压力和长期小选择确定全书方向。Use when the user asks for 家庭现实主义总纲、现实主义家庭小说大纲. 中纲转 novel-mid-outline；场卡转 novel-chapter-family-realism；正文转 novel-prose-from-outline.
 ---
 
 # Novel Style: Family Realism
@@ -15,7 +15,7 @@ description: 生成家庭现实主义小说总纲、中纲和场面设计。Use 
 
 - Use the style as a way of seeing, not as sentence-level imitation.
 - For non-00后三代 requests, do not import 周晓宁、林倩、周桂芳 or existing project scenes; build new carriers from the user's material.
-- If the user asks for 中纲, first write the 总纲 shape, then split into 4-6 large movements. Do not write chapter-level beats unless explicitly asked.
+- If the user asks for 中纲 / 部分总结：转 `novel-mid-outline`。本 skill 只交全书看法。
 
 ## Outline Rules
 
@@ -25,6 +25,18 @@ description: 生成家庭现实主义小说总纲、中纲和场面设计。Use 
 4. Conflict should be morally mixed: no pure villain, no pure victim.
 5. The climax should be a small household event that cannot be undone.
 6. The ending should not fully solve the family; it should let the reader understand why nobody could easily do better.
+
+## 思想落地
+
+总纲必须先写出全书思想、人物开篇→终局变化、主场背景变化。中纲转 `novel-mid-outline`。三栏见 `novel-thought-ground`。
+
+## 人物
+
+总纲必须把三个扛戏的人写成人物志，方法转 `novel-character-craft`。00 后三代不要在这里另造性格；用该 skill 的 `sandai-cast.md` 和 `番茄/00hou-sandai/中纲/人物志/`。
+
+大章纲若从本风格往下拆，必须带「本章人物」：本章压到哪一寸身世，手和嘴怎样分开。不要把总纲人物段复制进每一章。
+
+每人既有用又伤人。遮住姓名应仍能认出是谁。
 
 ## For 00后三代
 
